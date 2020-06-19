@@ -1,1 +1,131 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutena</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html,
+        body {
+            background-color: #212121;
+            margin: 0;
+        }
+
+        main {
+            height: 100vh;
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            margin: auto;
+        }
+
+        img {
+            width: 80%;
+            margin-bottom: 30px;
+        }
+
+        p, small, h2, a {
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        small.slogan {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        footer {
+            bottom: 0;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+        }
+
+        li {
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        li a {
+            transition: .22s;
+            text-decoration: none;
+        }
+
+        li:last-child a {
+            text-decoration: underline;
+        }
+
+        li a:hover, li a:hover span::before{
+            color: rgb(99, 42, 85) !important;
+        }
+
+        li a span::before {
+            transition: .22s;
+            color: #fff !important;
+            font-size: 20pt;
+        }
+
+        @media (min-width: 768px) {
+            img {
+                width: 300px;
+                margin-bottom: 30px;
+            }
+            .md\:fixed-right {
+                position: fixed;
+                width: 100vw;
+                display: flex;
+                justify-content: flex-end;
+                right: 0;
+            }
+
+            main {
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="./logo.png" alt="Kutena logo" />
+        <small class="slogan">Nós fazemos acontecer! Nós somos Kutena! </small>
+        <h2> Estamos trabalhando, em nosso website 😎</h2>
+        <p>
+            Nosso objectivo é cobrir as principais necessidades no sector financeiro de <br /> países com pouco desempenho económico
+            digital.
+            Como? <br />
+            <br />
+            Converse connosco, envie um e-mail para <a href="mailto:interessado@kutena.ao">interessado@kutena.ao</a>
+        </p>
+
+        <footer class="md:fixed-right">
+            <ul>
+                <li>
+                    <a href="https://github.com/kutenabank/">
+                        <span class="icon-github"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/kutenabank/">
+                        <span class="icon-facebook"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.f6s.com/kutenabank">Acompanhe nossos passos no F6S</a>
+                </li>
+            </ul>
+        </footer>
+
+    </main>
+</body>
+</html>
