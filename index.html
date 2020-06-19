@@ -15,7 +15,7 @@
     <style>
         html,
         body {
-            background-color: #212121;
+            background-color: #ffffff;
             margin: 0;
         }
 
@@ -26,12 +26,12 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: #fff;
+            color: #212121;
             margin: auto;
         }
 
         img {
-            width: 80%;
+            width: 90%;
             margin-bottom: 30px;
         }
 
@@ -41,12 +41,15 @@
         }
 
         a {
-            color: #fff;
+            color: #212121;
             text-decoration: underline;
         }
 
         small.slogan {
-            color: rgba(255, 255, 255, 0.6);
+            color: #212121;
+        }
+        small.slogan + h2 {
+            color: rgb(96,30,81);
         }
 
         footer {
@@ -84,7 +87,7 @@
 
         @media (min-width: 768px) {
             img {
-                width: 300px;
+                width: 400px;
                 margin-bottom: 30px;
             }
             .md\:fixed-right {
@@ -104,8 +107,8 @@
 <body>
     <main>
         <img src="./logo.png" alt="Kutena logo" />
-        <small class="slogan">Nós fazemos acontecer! Nós somos Kutena! </small>
-        <h2> Estamos trabalhando, em nosso website 😎</h2>
+        <small class="slogan">Nós fazemos acontecer! Nós somos Kutena!</small>
+        <h2> Estamos trabalhando em nosso website 😎</h2>
         <p>
             Nossa missão é cobrir as principais necessidades no sector financeiro de <br /> países com pouco desempenho económico
             digital.
